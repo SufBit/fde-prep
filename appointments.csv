@@ -1,0 +1,21 @@
+id,provider,status,minutes
+1,Provider A,completed,30
+2,Provider B,no-show,0
+3,Provider A,completed,45
+4,Provider C,cancelled,0
+5,Provider B,completed,30
+6,Provider A,no-show,0
+7,Provider C,completed,60
+8,Provider B,completed,30
+9,Provider A,completed,30
+10,Provider C,completed,45
+11,Provider B,cancelled,0
+12,Provider A,completed,60
+13,Provider C,no-show,0
+14,Provider B,completed,45
+15,Provider A,cancelled,0
+16,Provider C,completed,30
+17,Provider B,completed,60
+18,Provider A,completed,30
+19,Provider C,completed,30
+20,Provider B,no-show,0
