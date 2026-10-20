@@ -18,20 +18,25 @@ def sort_counts(counts):
     for key,count in pairs:
         lines.append(f"{key}: {count}")
     return lines
+
+def count_by(rows: list[dict],field: str) -> dict[str, int]:
+    counts = {}
+    for row in rows:
+        key = row[field]
+        counts[key] = counts.get(key,0) + 1
+    return counts
     
 
-counts = {}
-for row in rows:
-    key = row["provider"] 
-    counts[key] = counts.get(key,0) + 1
+provider_counts = {}
+provider_counts = count_by(rows,"provider")
+print("Provider Counts:", provider_counts)
 
-sorted_counts = sort_counts(counts)
-print (sorted_counts)
+sorted_provider_counts = sort_counts(provider_counts)
+print (sorted_provider_counts)
 
 status_counts = {}
-for row in rows:
-    key = row["status"]
-    status_counts[key] = status_counts.get(key,0) + 1
+status_counts = count_by(rows,"status")
+print("Status Counts:", status_counts)
 
 sorted_status_counts = sort_counts(status_counts)
 print (sorted_status_counts)
@@ -42,7 +47,3 @@ for row in rows:
         total_duration += int(row["minutes"])
 
 print(f"Total Duration of Completed Appointments: {total_duration}")
-
-
-
-     
