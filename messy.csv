@@ -1,0 +1,11 @@
+id,provider,status,minutes
+1,Provider A,completed,30
+2,Provider B,no-show,0
+3,Provider A,completed,abc
+4,,completed,45
+5,Provider C,cancelled,
+6,Provider B,completed,60
+7,Provider A,unknown,30
+8,Provider C,completed,-15
+9,Provider B,completed,30
+10,Provider A,completed,45
