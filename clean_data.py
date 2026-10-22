@@ -1,11 +1,17 @@
+import argparse
 import csv
 import json
 import logging
 
+
 logging.basicConfig(filename="cleaning.log", level=logging.INFO, format="%(asctime)s %(message)s")
 
+parser = argparse.ArgumentParser(description="Clean a messy appointments CSV")
+parser.add_argument("input")
+parser.add_argument("--out", default="clean.json")
+args = parser.parse_args()
 
-with open('messy.csv', newline= "") as f:
+with open(args.input, newline= "") as f:
     rows = list(csv.DictReader(f))
 
 good_list = []
@@ -30,9 +36,10 @@ for row in rows:
         logging.warning(f"Negative value for minutes in row {row['id']}")
         bad_list.append(row)
         continue
+    row["minutes"] = minutes
     good_list.append(row)
 
 logging.info(f"Good rows: {len(good_list)}, bad rows: {len(bad_list)}")
 
-with open("clean.json", "w") as f:
+with open(args.out, "w") as f:
     json.dump(good_list, f, indent=2)
