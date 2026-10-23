@@ -45,3 +45,9 @@
 2026-10-22 11:43:35,848 Invalid status for row 7
 2026-10-22 11:43:35,848 Negative value for minutes in row 8
 2026-10-22 11:43:35,848 Good rows: 5, bad rows: 5
+2026-10-23 11:45:43,761 Invalid value for minutes in row 3
+2026-10-23 11:45:43,761 Missing provider for row 4
+2026-10-23 11:45:43,761 Invalid value for minutes in row 5
+2026-10-23 11:45:43,761 Invalid status for row 7
+2026-10-23 11:45:43,761 Negative value for minutes in row 8
+2026-10-23 11:45:43,761 Good rows: 5, bad rows: 5
