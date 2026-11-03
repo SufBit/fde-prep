@@ -51,3 +51,15 @@
 2026-10-23 11:45:43,761 Invalid status for row 7
 2026-10-23 11:45:43,761 Negative value for minutes in row 8
 2026-10-23 11:45:43,761 Good rows: 5, bad rows: 5
+2026-11-03 11:04:28,973 Error cleaning row {'id': '3', 'provider': 'Provider A', 'status': 'completed', 'minutes': 'abc'}: invalid literal for int() with base 10: 'abc'
+2026-11-03 11:04:28,974 Error cleaning row {'id': '4', 'provider': '', 'status': 'completed', 'minutes': '45'}: Missing provider
+2026-11-03 11:04:28,974 Error cleaning row {'id': '5', 'provider': 'Provider C', 'status': 'cancelled', 'minutes': ''}: invalid literal for int() with base 10: ''
+2026-11-03 11:04:28,974 Error cleaning row {'id': '7', 'provider': 'Provider A', 'status': 'unknown', 'minutes': '30'}: Invalid status
+2026-11-03 11:04:28,974 Error cleaning row {'id': '8', 'provider': 'Provider C', 'status': 'completed', 'minutes': '-15'}: Negative value for minutes
+2026-11-03 11:04:28,974 Good rows: 5, bad rows: 0
+2026-11-03 11:06:10,088 Error cleaning row {'id': '3', 'provider': 'Provider A', 'status': 'completed', 'minutes': 'abc'}: invalid literal for int() with base 10: 'abc'
+2026-11-03 11:06:10,089 Error cleaning row {'id': '4', 'provider': '', 'status': 'completed', 'minutes': '45'}: Missing provider
+2026-11-03 11:06:10,089 Error cleaning row {'id': '5', 'provider': 'Provider C', 'status': 'cancelled', 'minutes': ''}: invalid literal for int() with base 10: ''
+2026-11-03 11:06:10,089 Error cleaning row {'id': '7', 'provider': 'Provider A', 'status': 'unknown', 'minutes': '30'}: Invalid status
+2026-11-03 11:06:10,089 Error cleaning row {'id': '8', 'provider': 'Provider C', 'status': 'completed', 'minutes': '-15'}: Negative value for minutes
+2026-11-03 11:06:10,089 Good rows: 5, bad rows: 5
